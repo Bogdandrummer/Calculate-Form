@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Calculate form</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!--File loader-->
+		<div class="loader" id="loader">
+			<h2 class="title">Завантаження файлу</h2>
+			<img src="spinner.gif" alt="spinner" class="spinner">
+		</div>
+
+		<!--Calculating loader-->
+		<div class="loader" id="calc">
+			<h2 class="title">Обчислення розрахунків</h2>
+			<img src="spinner.gif" alt="spinner" class="spinner">
+		</div>
+
+		<!--Форма-->
+		<form class="calculate__form" action="#">
+
+			<label for="max__value" class="lbl">Максимальне значення
+				<input type="text" class="result" id="max__value" value="0">
+			</label>
+
+			<label for="min__value" class="lbl">Мінімальне значення
+				<input type="text" class="result" id="min__value" value="0">
+			</label>
+
+			<label for="median" class="lbl">Медіана
+				<input type="text" class="result" id="median" value="0">
+			</label>
+
+			<label for="middle__Arith" class="lbl">Середнє арифметичне
+				<input type="text" class="result" id="middle__Arith" value="0">
+			</label>
+
+			<label for="pos__seq" class="lbl">Найбільша послідовність чисел, що збільшуються
+				<input type="text" class="result" id="pos__seq" value="0">
+			</label>
+
+			<label for="neg__seq" class="lbl">Найбільша послідовність чисел, що зменшуються
+				<input type="text" class="result" id="neg__seq" value="0">
+			</label>
+
+			<button class="calc__result" id="calc__result">Результат</button>
+
+		</form>
+
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
